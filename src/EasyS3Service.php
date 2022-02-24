@@ -125,14 +125,18 @@ class EasyS3Service
      */
     public function deleteObjects(string $bucket, array $keys): Result
     {
+        $objects = [];
+
+        foreach ($keys as $key) {
+            $objects[] = [
+                'Key' => $key
+            ];
+        }
+
         return $this->client->deleteObjects([
             'Bucket'  => $bucket,
             'Delete' => [
-                'Objects' => [
-                    [
-                        'Key' => $keys
-                    ]
-                ]
+                'Objects' => $objects
             ]
         ]);
     }
