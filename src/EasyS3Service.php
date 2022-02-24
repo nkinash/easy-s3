@@ -8,7 +8,7 @@ namespace nka20\EasyS3;
 use Aws\Result;
 use Aws\S3\S3Client;
 
-class Service
+class EasyS3Service
 {
     protected S3Client $client;
 
@@ -27,8 +27,8 @@ class Service
         string $key,
         string $secret,
         string $region,
-        string $version = 'latest',
         string $endpoint = '',
+        string $version = 'latest',
         array $config = []
     )
     {

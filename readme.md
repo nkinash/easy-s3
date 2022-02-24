@@ -13,10 +13,10 @@ This package makes using s3 easier.
 // Require the Composer autoloader.
 require 'vendor/autoload.php';
 
-use nka20\easyS3\Service;
+use nka20\EasyS3\EasyS3Service;
 
 // Instantiate an S3 service.
-$s3 = new Service(
+$s3 = new EasyS3Service(
     'key',
     'secret',
     'ru-central1'
