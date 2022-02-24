@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "aws/aws-sdk-php": "^3.0.0",
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "ext-simplexml": "*"
     },
     "autoload": {
         "psr-4": {
