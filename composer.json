@@ -1,0 +1,20 @@
+{
+    "name": "nka20/easy-s3",
+    "description": "S3 decorator for easy use Amazon S3 protocol. Supports simple s3 commands",
+    "type": "library",
+    "require": {
+        "aws/aws-sdk-php": "^3.0.0",
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasyS3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nikita Kinash",
+            "email": "nka2018nn@gmail.com"
+        }
+    ]
+}
