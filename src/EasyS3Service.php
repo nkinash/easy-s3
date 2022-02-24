@@ -144,7 +144,7 @@ class EasyS3Service
      */
     public function createBucket(string $name, array $args = []): Result
     {
-        $args['bucket'] = $name;
+        $args['Bucket'] = $name;
         return $this->client->createBucket($args);
     }
 
@@ -155,12 +155,12 @@ class EasyS3Service
      */
     public function deleteBucket(string $name, array $args = []): Result
     {
-        $args['bucket'] = $name;
-        return $this->client->createBucket($args);
+        $args['Bucket'] = $name;
+        return $this->client->deleteBucket($args);
     }
 
     /**
-     * For advanced S3 Client use
+     * For advanced S3 Client usage
      * @return S3Client
      */
     public function getClient(): S3Client
